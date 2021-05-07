@@ -1,0 +1,135 @@
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    line-height: 1.7;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  :focus {
+    outline-width: 0;
+  }
+
+ /* ------------------------------------- */
+
+ .top {
+     display: flex;
+     align-items: center;
+     margin: auto;
+     max-width: 110rem;
+     justify-content: space-between;
+     margin-top: 5vh;
+     margin-bottom: 5rem;
+ }
+
+ .top .category-title {
+     font-size: 2rem;
+ }
+
+ .top .btn {
+     padding: 2rem 4rem;
+     border: none;
+     margin-right: 1rem;
+     border-radius: .5rem;
+     font-size: 1.7rem;
+     font-weight: 600;
+     background: #4AABED;
+     color: white;
+     cursor: pointer;
+ }
+
+ .top .btn:hover {
+     background: #4094cc;
+     transition: 0.2s ease-in;
+ }
+
+ .images .container {
+     display: grid;
+     grid-gap: 2rem;
+     grid-template-columns: repeat(2, 1fr);
+     max-width: 120rem;
+     margin: auto;
+     justify-self: center;
+     margin-bottom: 2rem;
+ }
+
+ .images .container img {
+     height: 40rem;
+     justify-self: center;
+ }
+
+
+
+ .hidden {
+     display: none !important;
+ }
+
+ /* ------------------------------------- */
+
+ @media only screen and (max-device-width: 480px) {
+     .top {
+        justify-content: space-between;
+        padding: 2rem;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+     }
+
+     .top .category-title {
+        text-align: center;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 17.5rem;
+        margin-bottom: 1rem;
+     }
+
+     .top .category-title .title {
+         text-align: center;
+         margin: auto;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .top .filter-btns {
+         display: flex;
+         margin: auto;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+     }
+
+     .top .filter-btns .btn {
+         padding: 2rem 3.2rem;
+     }
+
+     .images .container {
+         grid-template-columns: 1fr;
+         margin: auto;
+         justify-items: center
+     }
+
+     .images .container img {
+         height: 50rem;
+     }
+ }
